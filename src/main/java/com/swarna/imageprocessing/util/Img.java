@@ -6,8 +6,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.swarna.imgprocessing.util.Constant.MAX_LENGTH_OF_HEADER_LINE;
-
 public class Img {
     private List<String> headers;
     private List<Integer> body;
@@ -15,9 +13,9 @@ public class Img {
 
     public Img(List<String> actualData) {
         //this.actualData = actualData;
-        this.body = actualData.stream().filter(l -> l.length() > MAX_LENGTH_OF_HEADER_LINE)
+        this.body = actualData.stream().filter(l -> l.length() > Constant.MAX_LENGTH_OF_HEADER_LINE)
                 .flatMap(l -> Arrays.stream(l.split(" "))).map(Integer::parseInt).collect(Collectors.toList());
-        this.headers = actualData.stream().filter(l -> l.length() <= MAX_LENGTH_OF_HEADER_LINE).collect(Collectors.toList());
+        this.headers = actualData.stream().filter(l -> l.length() <= Constant.MAX_LENGTH_OF_HEADER_LINE).collect(Collectors.toList());
     }
 
     public Img() {
@@ -25,9 +23,9 @@ public class Img {
 
     public void setActualData(List<String> actualData) {
         //this.actualData = actualData;
-        this.body = actualData.stream().filter(l -> l.length() > MAX_LENGTH_OF_HEADER_LINE)
+        this.body = actualData.stream().filter(l -> l.length() > Constant.MAX_LENGTH_OF_HEADER_LINE)
                 .flatMap(l -> Arrays.stream(l.split(" "))).map(Integer::parseInt).collect(Collectors.toList());
-        this.headers = actualData.stream().filter(l -> l.length() <= MAX_LENGTH_OF_HEADER_LINE).collect(Collectors.toList());
+        this.headers = actualData.stream().filter(l -> l.length() <= Constant.MAX_LENGTH_OF_HEADER_LINE).collect(Collectors.toList());
     }
 
     public void setHeaders(List<String> headers) {

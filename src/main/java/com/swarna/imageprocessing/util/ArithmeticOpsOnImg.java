@@ -8,7 +8,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static com.swarna.imgprocessing.util.Constant.MAX_LENGTH_OF_PGM_IMG;
+import static com.swarna.imageprocessing.util.Constant.MAX_LENGTH_OF_PGM_IMG;
 
 public class ArithmeticOpsOnImg {
 
