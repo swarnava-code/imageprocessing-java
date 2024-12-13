@@ -1,4 +1,4 @@
-package com.swarna.imgprocessing.algo.arithmetic;
+package com.swarna.imageprocessing.algo.arithmetic;
 
 import static com.swarna.imgprocessing.util.FileUtil.imread;
 import static com.swarna.imgprocessing.util.ImShow.imshow;

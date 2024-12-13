@@ -1,4 +1,4 @@
-package com.swarna.imgprocessing.algo.linearstreching;
+package com.swarna.imageprocessing.algo.linearstreching;
 
 import com.swarna.imgprocessing.util.Constant;
 
