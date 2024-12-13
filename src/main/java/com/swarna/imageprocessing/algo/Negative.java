@@ -1,8 +1,9 @@
 package com.swarna.imageprocessing.algo;
 
-import static com.swarna.imgprocessing.util.ArithmeticOpsOnImg.sub;
-import static com.swarna.imgprocessing.util.FileUtil.imread;
-import static com.swarna.imgprocessing.util.FileUtil.imwrite;
+
+import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.sub;
+import static com.swarna.imageprocessing.util.FileUtil.imread;
+import static com.swarna.imageprocessing.util.FileUtil.imwrite;
 
 public class Negative {
 

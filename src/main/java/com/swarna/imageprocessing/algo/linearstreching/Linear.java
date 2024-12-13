@@ -1,10 +1,11 @@
 package com.swarna.imageprocessing.algo.linearstreching;
 
-import com.swarna.imgprocessing.util.Constant;
 
-import static com.swarna.imgprocessing.util.ArithmeticOpsOnImg.*;
-import static com.swarna.imgprocessing.util.FileUtil.imread;
-import static com.swarna.imgprocessing.util.ImShow.imshow;
+import com.swarna.imageprocessing.util.Constant;
+import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.max;
+import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.min;
+import static com.swarna.imageprocessing.util.FileUtil.imread;
+import static com.swarna.imageprocessing.util.ImShow.imshow;
 import static java.lang.Math.round;
 
 public class Linear {

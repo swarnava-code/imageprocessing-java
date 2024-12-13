@@ -1,7 +1,8 @@
 package com.swarna.imageprocessing.algo.arithmetic;
 
-import static com.swarna.imgprocessing.util.FileUtil.imread;
-import static com.swarna.imgprocessing.util.ImShow.imshow;
+
+import static com.swarna.imageprocessing.util.FileUtil.imread;
+import static com.swarna.imageprocessing.util.ImShow.imshow;
 import static java.lang.Math.log;
 
 public class Log {
