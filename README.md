@@ -47,8 +47,9 @@ Checkout all utility classes here:
 [src/main/java/com/swarna/imageprocessing/util/...](src/main/java/com/swarna/imageprocessing/util)
 
 ```java
-import static com.swarna.imageprocessing.util.OperationsOnImage.sub;
-
+import static com.swarna.imageprocessing.util.OperationsOnImage.*;
+import static com.swarna.imageprocessing.util.FileUtil.*;
+import static com.swarna.imageprocessing.util.ImShow.*;
 ```
 
 ## Example
