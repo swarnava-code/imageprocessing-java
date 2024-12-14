@@ -1,9 +1,9 @@
-package com.swarna.imageprocessing.algo.linearstreching;
+package com.swarna.imageprocessing.algo.linearstretching;
 
 
 import com.swarna.imageprocessing.util.Constant;
-import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.max;
-import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.min;
+import static com.swarna.imageprocessing.util.OperationsOnImage.max;
+import static com.swarna.imageprocessing.util.OperationsOnImage.min;
 import static com.swarna.imageprocessing.util.FileUtil.imread;
 import static com.swarna.imageprocessing.util.ImShow.imshow;
 import static java.lang.Math.round;

@@ -1,7 +1,7 @@
 package com.swarna.imageprocessing.algo.arithmetic;
 
 
-import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.*;
+import static com.swarna.imageprocessing.util.OperationsOnImage.*;
 import static com.swarna.imageprocessing.util.FileUtil.imread;
 import static com.swarna.imageprocessing.util.ImShow.imshow;
 

@@ -47,9 +47,8 @@ Checkout all utility classes here:
 [src/main/java/com/swarna/imageprocessing/util/...](src/main/java/com/swarna/imageprocessing/util)
 
 ```java
-import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.sub;
-import static com.swarna.imageprocessing.util.FileUtil.imread;
-import static com.swarna.imageprocessing.util.FileUtil.imwrite;
+import static com.swarna.imageprocessing.util.OperationsOnImage.sub;
+
 ```
 
 ## Example
@@ -74,7 +73,8 @@ All Example Documented to the following path:
 - Contributed by Swarnava Chakraborty with ❤️
 
 
-## Contact ID
+## Contact
+
 - Gmail: swarnava.code
 - Medium: @swarnava-code
 - LinkedIn: swarnavac

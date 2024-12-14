@@ -1,7 +1,7 @@
-package com.swarna.imageprocessing.algo;
+package com.swarna.imageprocessing.algo.negative;
 
 
-import static com.swarna.imageprocessing.util.ArithmeticOpsOnImg.sub;
+import static com.swarna.imageprocessing.util.OperationsOnImage.sub;
 import static com.swarna.imageprocessing.util.FileUtil.imread;
 import static com.swarna.imageprocessing.util.FileUtil.imwrite;
 

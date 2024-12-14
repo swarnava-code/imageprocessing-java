@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 
 import static com.swarna.imageprocessing.util.Constant.MAX_LENGTH_OF_PGM_IMG;
 
-public class ArithmeticOpsOnImg {
+public class OperationsOnImage {
 
     public static Img add(Integer integerValue, Img... b) {
         BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa + fb;
@@ -52,14 +52,8 @@ public class ArithmeticOpsOnImg {
         return forEachPixelValue(function, a, b);
     }
 
-    public static Img sqrt(Integer integerValue, Img... b) {
-        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa ^ fb;
-        return forEachPixelValue(function, integerValue, b);
-    }
-
-    public static Img sqrt(Img a, Img... b) {
-        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa ^ fb;
-        return forEachPixelValue(function, a, b);
+    public static Img sqrt(Img a) {
+        return a.forEachPixelValue((i) -> (int) Math.sqrt(i));
     }
 
     public static int max(Img img) {
@@ -72,17 +66,38 @@ public class ArithmeticOpsOnImg {
                 .limit(toPixelIndex)
                 .reduce(Integer::max)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid index, Please provide valid one"));
-//        return Collections.max(img.getBody());
     }
 
     public static int min(Img img) {
         return Collections.min(img.getBody());
     }
 
-//    public static Img calcArithmeticOps(BiFunction<Integer, Integer, Integer> arithmeticOps, Img a, Img... b) {
-//        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa ^ fb;
-//        return calcArithmeticOps(function, a, b);
-//    }
+    public static int min(Img img, int fromPixelIndex, int toPixelIndex) {
+        return img.getBody().stream()
+                .skip(fromPixelIndex)
+                .limit(toPixelIndex)
+                .reduce(Integer::min)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid index, Please provide valid one"));
+    }
+
+    public static Img bitor(Img a, Img... b) {
+        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa | fb;
+        return forEachPixelValue(function, a, b);
+    }
+
+    public static Img bitxor(Img a, Img... b) {
+        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa ^ fb;
+        return forEachPixelValue(function, a, b);
+    }
+
+    public static Img bitcmp(Img a) {
+        return a.forEachPixelValue((i) -> ~i);
+    }
+
+    public static Img bitand(Img a, Img... b) {
+        BiFunction<Integer, Integer, Integer> function = (fa, fb) -> fa & fb;
+        return forEachPixelValue(function, a, b);
+    }
 
     public static Img forEachPixelValue(BiFunction<Integer, Integer, Integer> arithmeticFunction, Img a, Img... b) {
         var valuesA = a.getBody();
