@@ -3,7 +3,7 @@ package com.swarna.imageprocessing.algo.arithmetic;
 
 import static com.swarna.imageprocessing.util.OperationsOnImage.*;
 import static com.swarna.imageprocessing.util.FileUtil.imread;
-import static com.swarna.imageprocessing.util.ImShow.imshow;
+import static com.swarna.imageprocessing.util.viewer.img.ImShow.imshow;
 
 public class ImgTransByArithOps {
 

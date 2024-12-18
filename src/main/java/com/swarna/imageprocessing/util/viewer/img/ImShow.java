@@ -1,4 +1,4 @@
-package com.swarna.imageprocessing.util;
+package com.swarna.imageprocessing.util.viewer.img;
 
 import javax.swing.*;
 import java.util.List;

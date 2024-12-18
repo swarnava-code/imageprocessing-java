@@ -3,7 +3,7 @@ package com.swarna.imageprocessing.algo.arithmetic;
 
 import static com.swarna.imageprocessing.util.OperationsOnImage.forEachPixelValue;
 import static com.swarna.imageprocessing.util.FileUtil.imread;
-import static com.swarna.imageprocessing.util.ImShow.imshow;
+import static com.swarna.imageprocessing.util.viewer.img.ImShow.imshow;
 import static java.lang.Math.pow;
 
 public class Power {
